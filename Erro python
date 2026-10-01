@@ -1,0 +1,44 @@
+C:\Users\ryanc>python "C:\Users\ryanc\Downloads\Prova Sis.Dis\cliente.py"
+Traceback (most recent call last):
+  File "C:\Users\ryanc\Downloads\Prova Sis.Dis\cliente.py", line 5, in <module>
+    resultado = servidor.calcular_entrega(8,3)
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\xmlrpc\client.py", line 1096, in __call__
+    return self.__send(self.__name, args)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\xmlrpc\client.py", line 1435, in __request
+    response = self.__transport.request(
+        self.__host,
+    ...<2 lines>...
+        verbose=self.__verbose
+        )
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\xmlrpc\client.py", line 1140, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\xmlrpc\client.py", line 1152, in single_request
+    http_conn = self.send_request(host, handler, request_body, verbose)
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\xmlrpc\client.py", line 1265, in send_request
+    self.send_content(connection, request_body)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\xmlrpc\client.py", line 1295, in send_content
+    connection.endheaders(request_body)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "C:\Users\ryanc\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
