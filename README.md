@@ -38,5 +38,5 @@ O Cálculo foi executado no servidor.py
 O cliente.py inicia a solicitação ao servidor
 3. O que aconteceria com o cliente se o servidor estivesse desligado?
 O cliente não consegue se conectar apresentando uma mensagem de erro.
-Existe um arquivo no repositório que mostra o log de erro, o nome do arquivo é erro python.
+Existe um arquivo no repositório que mostra o log de erro, o nome do arquivo é Erro python.
 
